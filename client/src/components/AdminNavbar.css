@@ -1,0 +1,123 @@
+/* 🔹 Admin Navbar Container */
+.admin-nav-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* 🔹 Logo */
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .navbar-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  
+  /* 🔹 Admin Navigation Links */
+  .admin-nav-menu {
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+  }
+  
+  .admin-nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .admin-nav-menu a:hover {
+    color: #ffd700;
+  }
+  
+  /* 🔹 Logout Button */
+  .logout-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    width: 100px;
+  }
+  
+  .logout-btn:hover {
+    background-color: #b02a37;
+    transform: scale(1.05);
+  }
+  
+  /* 🔹 Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .admin-nav-menu {
+      gap: 20px;
+    }
+  
+    .logout-btn {
+      padding: 8px 16px;
+      font-size: 14px;
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .admin-header {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+    }
+  
+    .admin-nav-menu {
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: 0;
+    }
+  
+    .logo {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+  
+    .logout-btn {
+      padding: 8px 14px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .admin-nav-menu {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .logo {
+      font-size: 18px;
+    }
+  
+    .logout-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

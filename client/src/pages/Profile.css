@@ -1,0 +1,119 @@
+.profile-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-img-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.05);
+  }
+  
+  .default-icon {
+    font-size: 120px;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .profile-img-container input[type="file"] {
+    margin-top: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .profile-form input,
+  .profile-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .profile-form input:focus,
+  .profile-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+  }
+  
+  .profile-form button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .profile-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .profile-form button:disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 576px) {
+    .profile-container {
+      margin: 20px;
+      padding: 20px;
+    }
+  
+    .profile-heading {
+      font-size: 20px;
+    }
+  
+    .profile-form input,
+    .profile-form textarea {
+      font-size: 14px;
+    }
+  
+    .profile-form button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .profile-img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .default-icon {
+      font-size: 100px;
+    }
+  }
+  

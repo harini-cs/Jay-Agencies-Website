@@ -1,0 +1,142 @@
+.cart-page {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .cart-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .item-details {
+    flex: 1;
+  }
+  
+  .item-details h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .item-details p {
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  /* Quantity Controls */
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+  }
+  
+  .qty-btn {
+    background-color: #eee;
+    color: #333;
+    width: 30px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s ease;
+  }
+  
+  .qty-btn:hover {
+    background-color: #ddd;
+  }
+  
+  .qty {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Remove button */
+  .remove-btn {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100px;
+  }
+  
+  .remove-btn:hover {
+    background-color: #e04345;
+  }
+  
+  /* Summary Section */
+  .cart-summary {
+    margin-top: 30px;
+    text-align: right;
+  }
+  
+  .checkout-btn {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  /* Toast Message */
+  .toast {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px auto;
+    width: fit-content;
+    border-radius: 5px;
+    animation: fadeInOut 2s ease-in-out;
+  }
+  
+  /* Toast animation */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+  
+  .stock-warning {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
